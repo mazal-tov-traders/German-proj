@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "b259e565-3bab-4555-a2f6-a19e882db812": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "0de98498-087d-4b15-b978-6818fc93d553": {
+      "type": "image-comparison",
+      "blocks": {
+        "template--20604569223475__0de98498-087d-4b15-b978-6818fc93d553-look-1": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/harmony_evergarden_a_female_black_model_wearing_a_red_floral_pr_2ef6fe7b-a96b-4419-9d95-7627c9d38fff.jpg",
+            "title": "",
+            "title_size": "small",
+            "title_position": "start"
+          }
+        },
+        "template--20604569223475__0de98498-087d-4b15-b978-6818fc93d553-look-2": {
+          "type": "look",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/harmony_evergarden_a_female_black_model_wearing_a_red_evening_g_cd70626b-5312-4d46-9ae2-4cdba26fe021.jpg",
+            "title": "",
+            "title_size": "small",
+            "title_position": "start"
+          }
+        }
+      },
+      "block_order": [
+        "template--20604569223475__0de98498-087d-4b15-b978-6818fc93d553-look-1",
+        "template--20604569223475__0de98498-087d-4b15-b978-6818fc93d553-look-2"
+      ],
+      "settings": {
+        "layout": "horizontal",
+        "image_ratio": "100vh",
+        "mobile_image_ratio": "200px",
+        "full_width": false,
+        "show_divider": false,
+        "heading": "Image comparison",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "colors_line": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "e53de7cf-5a5d-4b64-b5f6-d93daeea2645": {
+      "type": "slider-carusel",
+      "blocks": {
+        "e0716a3f-c240-4448-93c3-9bba2a59eedd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2560px-Fujifilm_logo_2.png"
+          }
+        },
+        "72c406e7-a1e1-4f59-9e9d-4a07c1056d66": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Canon_wordmark_2.png"
+          }
+        },
+        "f28b96e9-b8d9-479a-b98d-f76204db41c0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sony_logo_1.png"
+          }
+        },
+        "ee8a587c-7d5d-427a-b11a-35a8a46cc5d7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1024px-Logo_of_the_Eastman_Kodak_Company__2006_2016_1.png"
+          }
+        },
+        "82b7aec4-4bd4-4275-95e3-568cba21efaa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/HiTi-LOGO-NEW-2016-6-6-16_1.png"
+          }
+        },
+        "cc4b9f14-ef90-4e4b-b286-ffd7e74e4d69": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dai_Nippon_Printing_logo_1.png"
+          }
+        },
+        "4673414a-2f82-4e0e-8aab-f9541038789c": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Epson-Logo_2.png"
+          }
+        },
+        "5ba337d5-addd-4707-8ad2-302a1771a877": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_1_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "e0716a3f-c240-4448-93c3-9bba2a59eedd",
+        "72c406e7-a1e1-4f59-9e9d-4a07c1056d66",
+        "f28b96e9-b8d9-479a-b98d-f76204db41c0",
+        "ee8a587c-7d5d-427a-b11a-35a8a46cc5d7",
+        "82b7aec4-4bd4-4275-95e3-568cba21efaa",
+        "cc4b9f14-ef90-4e4b-b286-ffd7e74e4d69",
+        "4673414a-2f82-4e0e-8aab-f9541038789c",
+        "5ba337d5-addd-4707-8ad2-302a1771a877"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "b259e565-3bab-4555-a2f6-a19e882db812",
+    "0de98498-087d-4b15-b978-6818fc93d553",
+    "e53de7cf-5a5d-4b64-b5f6-d93daeea2645"
+  ]
+}

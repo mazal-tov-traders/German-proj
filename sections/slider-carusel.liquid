@@ -1,0 +1,92 @@
+{{ 'slider-carusel.css' | asset_url | stylesheet_tag }}
+    <section class='aaaaaaaa'>
+<div class="box">
+  {% for block in section.blocks %}
+    {% if block.type == "image" %}
+      <span class="box-span" style="--i:{{ forloop.index }};">
+        <img
+        src="{{ block.settings.image | img_url: 'original' }}"
+        alt="image"
+        class="box-span-img"
+        id="image-{{ forloop.index }}"
+        data-index="{{ forloop.index }}"
+        >
+        </span>
+    {% endif %}
+  {% endfor %}
+</div>
+      </section>
+
+<script type="text/javascript">
+    let box = document.querySelector('.box');
+    let isMouseDown = false; // Переменная для отслеживания состояния кнопки мыши
+    let isScrolling = false; // Переменная для отслеживания состояния прокрутки
+    let currentRotation = 0; // Текущий угол вращения
+    let inertia = 0.95; // Коэффициент инерции
+
+    window.onmousedown = function (e) {
+        if (e.button === 0) {
+            isMouseDown = true;
+            isScrolling = false;
+        }
+    };
+
+    window.onmouseup = function () {
+        isMouseDown = false;
+        isScrolling = true;
+    };
+
+    window.onmousemove = function (e) {
+        if (isMouseDown) {
+            let x = e.clientX / 3;
+            box.style.transform = `perspective(1000px) rotateY(${x}deg)`;
+            currentRotation = x;
+        }
+    };
+
+    function scrollWithInertia() {
+        if (isScrolling) {
+            // Применяем инерцию
+            currentRotation *= inertia;
+            box.style.transform = `perspective(1000px) rotateY(${currentRotation}deg)`;
+
+            // Если инерция стала небольшой, прекращаем прокрутку
+            if (Math.abs(currentRotation) < 0.1) {
+                isScrolling = false;
+            }
+
+            // Запускаем анимацию следующего кадра
+            requestAnimationFrame(scrollWithInertia);
+        }
+    }
+
+    // Запускаем анимацию для инерции
+    requestAnimationFrame(scrollWithInertia);
+</script>
+  
+{% schema %}
+{
+  "name": "slider-carousel",
+  "tag": "section",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "image1",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "slider-carousel"
+    }
+  ]
+}
+{% endschema %}
